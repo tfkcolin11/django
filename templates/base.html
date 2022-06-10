@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'mysite/css/styles.css' %}">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% if page_title %}{{ page_title }} - {% endif %} {{ site_name }}{% endblock %}</title>
+    <meta name="keywords" content="{{ meta_keywords }}" />
+    <meta name="description" content="{{ meta_description }}" />
+    <title>Title</title>
+</head>
+<body>
+    {% block site_wrapper %}{% endblock %}
+</body>
+</html>
